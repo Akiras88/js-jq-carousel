@@ -10,12 +10,28 @@
 $(document).ready(function(){
 
     // references
-    var chevronRight = $('.angle-sx > a');
-    var chevronLeft = $('.angle-dx > a');
+    var chevronRight = $('.angle-sx > a i');
+    var chevronLeft = $('.angle-dx > a i');
 
-    chevronRight.click(nextImg);
-    chevronLeft.click(prevImg);
+    chevronRight.click(prevImg);
+    // hover effect
+    chevronRight.mouseenter(function() {
+        chevronRight.addClass('hover-color');
+    });
+    chevronRight.mouseleave (function() {
+        chevronRight.removeClass('hover-color');
+    });
+
+    chevronLeft.click(nextImg);
+    // hover effect
+    chevronLeft.mouseenter(function() {
+    chevronLeft.addClass('hover-color')
+    });
+    chevronLeft.mouseleave (function() {
+        chevronLeft.removeClass('hover-color');
+    });
     
+    // control with keyboard
     $(document).keydown( function(push) {
         if ( push.keyCode == 39 ) {
             nextImg();
@@ -33,7 +49,7 @@ $(document).ready(function(){
 
 function nextImg() {
     var showImg = $('.img-container.show');
-    var firstImg = $('img-container.first');
+    var firstImg = $('.img-container.first');
     
     showImg.toggleClass('show');
     if ( showImg.hasClass('last') ) {

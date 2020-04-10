@@ -1,3 +1,4 @@
+/* GENERAL SETTINGS */
 * {
     margin: 0;
     padding: 0;
@@ -5,33 +6,50 @@
     background-color: black;
     color: blanchedalmond;
 }
+
+/* SECTION PHOTO */
 .slide-photo {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    position: relative;
 }
-.angle-sx,
-.angle-dx {
+.angle-sx a,
+.angle-dx a {
     font-size: 50px;
     max-width: 100px;
+    flex-shrink: 0;
+}
+.angle-sx {
+    margin-left: 65px;
+}
+.angle-dx {
+    margin-right: 65px;
+}
+.hover-color { /*jQuery */
+    color: red;
+    font-size: 70px;
 }
 
 .img-container img{
     margin-top: 30px;
-    max-height: 600px;
-    min-width: 600px;
+    max-height: 500px; 
     display: none;
+    flex-shrink: 0;
+    box-shadow: 0 15px 8px -10px rgba(256,256,256, .20);
 }
 .show img{
     display: block; /* jQuery */
 }
+
+/* SECTION SLIDER BOTTOM */
 .slider-container {
     display: flex;
     justify-content: center;  
 }
 .slider {
-    margin: 10px 0 10px;
+    margin: 20px 0 10px;
     padding: 7px;
     border-radius: 10px;
     border: 2px solid cornsilk;
