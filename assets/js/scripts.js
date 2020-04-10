@@ -16,7 +16,13 @@ $(document).ready(function(){
     chevronRight.click(nextImg);
     chevronLeft.click(prevImg);
     
-
+    $(document).keydown( function(push) {
+        if ( push.keyCode == 39 ) {
+            nextImg();
+        } else if ( push.keyCode == 37 ) {
+            prevImg();
+        }
+    });
 
 
 

@@ -5,9 +5,10 @@
     background-color: black;
     color: blanchedalmond;
 }
-body {
+.slide-photo {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 .angle-sx,
@@ -15,18 +16,28 @@ body {
     font-size: 50px;
     max-width: 100px;
 }
-.angle-sx {
-    margin-right: 65px;
-}
-.angle-dx {
-    margin-left: 65px;
-}
+
 .img-container img{
     margin-top: 30px;
     max-height: 600px;
-    max-width: 700px;
+    min-width: 600px;
     display: none;
 }
 .show img{
     display: block; /* jQuery */
+}
+.slider-container {
+    display: flex;
+    justify-content: center;  
+}
+.slider {
+    margin: 10px 0 10px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid cornsilk;
+}
+.slider ul {
+    display: inline-block;
+    list-style: none;
+    color: cornsilk;
 }
