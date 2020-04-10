@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: blanchedalmond;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.angle-sx,
+.angle-dx {
+    font-size: 50px;
+    max-width: 100px;
+}
+.angle-sx {
+    margin-right: 65px;
+}
+.angle-dx {
+    margin-left: 65px;
+}
+.img-container img{
+    margin-top: 30px;
+    max-height: 600px;
+    max-width: 700px;
+    display: none;
+}
+.show img{
+    display: block; /* jQuery */
+}
