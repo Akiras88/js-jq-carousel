@@ -40,8 +40,6 @@ $(document).ready(function(){
         }
     });
 
-
-
 });
 
 
@@ -50,12 +48,16 @@ $(document).ready(function(){
 function nextImg() {
     var showImg = $('.img-container.show');
     var firstImg = $('.img-container.first');
+    var circle = $('.first-circle');
     
     showImg.toggleClass('show');
     if ( showImg.hasClass('last') ) {
         firstImg.addClass('show');
+        circle.addClass('full-circle');
     } else {
         showImg.next().addClass('show');
+        circle.addClass('full-circle');
+        circle.next().addClass('full-circle');
     }
 }
 
