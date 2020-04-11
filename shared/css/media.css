@@ -7,8 +7,8 @@
         display: none;
     }
     .img-container img {
-        margin-top: 100px;
-        max-height: 400px; 
+        margin-top: 130px;
+        min-height: 450px; 
         max-width: 300px;
     }
     .slider {
@@ -23,9 +23,9 @@
 /* Medium devices (tablets, 768px and up, e.g. iPad Portrait) */
 @media (min-width: 768px) {
     .img-container img {
-        margin-top: 100px;
-        max-height: 500px; 
-        max-width: 400px;
+        margin-top: 300px;
+        max-height: 530px; 
+        max-width: 500px;
     }
 }
 
@@ -37,7 +37,7 @@
     }
     .img-container img {
         margin-top: 30px;
-        min-height: 550px;
+        min-height: 553px;
         max-width: 100%;
     }
     .slider {
